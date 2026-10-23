@@ -1,0 +1,52 @@
+site_name: 星芽少儿编程 · 知识库
+site_description: 星芽少儿编程内部知识库 — 课程体系、教务运营、企业基础、客户服务、品牌输出
+site_url: http://8.217.239.180/kb/
+# 内部管理文档：不展示到前端导航，也不进检索库（后端可直接读文件）
+exclude_docs: |
+  操作日志.md
+  知识库规范.md
+theme:
+  name: material
+  language: zh
+  favicon: assets/favicon.png
+  features:
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: orange
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: 深色模式
+    - scheme: slate
+      primary: deep orange
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: 浅色模式
+
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\u200b\u3000\-、。，．！？；：／]+'
+
+  - roamlinks
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - tables
+  - admonition
+  - footnotes
+
+extra:
+  generator: false
+extra_css:
+  - assets/custom.css
+extra_javascript:
+  - assets/ai-search.js

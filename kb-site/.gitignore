@@ -1,0 +1,29 @@
+# MkDocs 构建产物（由 docs/ 生成，勿跟踪）
+site/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 备份
+docs.bak/
+
+# venv（实际在 ~/.venvs/kb-site，此处防御性忽略）
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 迁移前临时文件（2026-09-06 清理）
+'
+_build.log
+_wait.py
+current_screenshot.png
+render_verification.png
+kb-site-backup-*.tar.gz
+*.orig.bak
